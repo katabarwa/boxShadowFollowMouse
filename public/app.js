@@ -2,22 +2,24 @@ let body = document.querySelector("body");
 body.style.backgroundColor = "black";
 body.style.display = "flex";
 body.style.flexWrap = "wrap";
-document.getElementById("body").addEventListener("onmousemove", draw);
+document.getElementById("body").addEventListener("click", draw);
 function draw(e) {
   console.log(e);
   let x = e.clientX;
   let y = e.clientY;
 
   // document.getElementById("shape").innerHTML = 80;
-  let numFrame = 2;
+  let numFrame = 1;
   for (let i = 0; i < numFrame; i++) {
     let frame = document.createElement("div");
     // frame.setAttribute("class", "width");
-    frame.setAttribute("class", "height");
+    frame.setAttribute("class", "frame");
     document.body.appendChild(frame);
-    let elements = document.getElementsByClassName("height");
+    let elements = document.getElementsByClassName("frame");
+    console.log("elements", elements);
     // elements[i].style.height = "5px";
     let randomNumber = Math.floor(Math.random() * 2);
+    console.log(randomNumber);
     if (randomNumber === 0) {
       elements[i].style.position = "absolute";
       elements[i].style.left = `${x}px`;
