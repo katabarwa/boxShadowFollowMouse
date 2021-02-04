@@ -27,8 +27,8 @@ function clickBody(e) {
         elements[elements.length - 1].style.position = "absolute";
 
         elements[elements.length - 1].style.backgroundColor = "black";
-        let randomHeight = Math.floor(Math.random() * (200 - 50)) + 50;
-        let randomWidth = Math.floor(Math.random() * (200 - 50)) + 50;
+        let randomHeight = Math.floor(Math.random() * (50 - 12.5)) + 12.5;
+        let randomWidth = Math.floor(Math.random() * (50 - 12.5)) + 12.5;
         elements[elements.length - 1].style.width = `${randomWidth}px`;
         elements[elements.length - 1].style.height = `${randomHeight}px`;
         elements[elements.length - 1].style.left = `${x - randomWidth / 2}px`;
@@ -40,8 +40,8 @@ function clickBody(e) {
       }
       if (i > 0) {
         elements[i].style.position = "absolute";
-        let randomHeight = Math.floor(Math.random() * (200 - 50)) + 50;
-        let randomWidth = Math.floor(Math.random() * (200 - 50)) + 50;
+        let randomHeight = Math.floor(Math.random() * (50 - 12.5)) + 12.5;
+        let randomWidth = Math.floor(Math.random() * (50 - 12.5)) + 12.5;
         elements[elements.length - i].style.left = `${x - randomWidth / 2}px`;
         elements[elements.length - i].style.top = `${y - randomHeight / 2}px`;
         elements[elements.length - i].style.backgroundColor = "black";
@@ -62,8 +62,8 @@ function clickBody(e) {
           elements[elements.length - 1].style.position = "absolute";
 
           elements[elements.length - 1].style.backgroundColor = "white";
-          let randomHeight = Math.floor(Math.random() * (200 - 50)) + 50;
-          let randomWidth = Math.floor(Math.random() * (200 - 50)) + 50;
+          let randomHeight = Math.floor(Math.random() * (50 - 12.5)) + 12.5;
+          let randomWidth = Math.floor(Math.random() * (50 - 12.5)) + 12.5;
           elements[elements.length - 1].style.width = `${randomWidth}px`;
           elements[elements.length - 1].style.height = `${randomHeight}px`;
           elements[elements.length - 1].style.left = `${x - randomWidth / 2}px`;
@@ -75,8 +75,8 @@ function clickBody(e) {
         }
         if (i > 0) {
           elements[i].style.position = "absolute";
-          let randomHeight = Math.floor(Math.random() * (200 - 50)) + 50;
-          let randomWidth = Math.floor(Math.random() * (200 - 50)) + 50;
+          let randomHeight = Math.floor(Math.random() * (50 - 12.5)) + 12.5;
+          let randomWidth = Math.floor(Math.random() * (50 - 12.5)) + 12.5;
           elements[elements.length - i].style.left = `${x - randomWidth / 2}px`;
           elements[elements.length - i].style.top = `${y - randomHeight / 2}px`;
           elements[elements.length - i].style.backgroundColor = "white";
