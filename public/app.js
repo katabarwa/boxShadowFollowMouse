@@ -2,7 +2,7 @@ let body = document.querySelector("body");
 body.style.backgroundColor = "black";
 // body.style.display = "flex";
 // body.style.flexWrap = "wrap";
-document.getElementById("body").addEventListener("click", clickBody);
+document.getElementById("body").addEventListener("onmousemove", clickBody);
 function clickBody(e) {
   let x = e.clientX;
   let y = e.clientY;
