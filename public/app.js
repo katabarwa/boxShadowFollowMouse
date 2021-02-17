@@ -18,12 +18,12 @@ class DirectionAwareShadow {
     const x = ((offsetWidth / 2 - offsetX) * 0.8) / 2 / 30;
     const y = ((offsetHeight / 2 - offsetY) * 0.8) / 2 / 30;
 
-    this.def[0].innerHTML = `<filter id="f4" x="-2px" y="-2px" width="500%" height="500%">
-    <feOffset id="f4bub" result="offOut" in="SourceGraphic" dx="${x}" dy="${y}"></feOffset>
-    <feColorMatrix result="original" id="svgcolormatrix" type="matrix" values="-1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 0 0 0 1 -0.04"></feColorMatrix>
-    <feGaussianBlur result="blurOut" in="matrixOut" stdDeviation="10"></feGaussianBlur>
-    <feBlend in="SourceGraphic" in2="blurOut" mode="normal"></feBlend>
-  </filter>`;
+  //   this.def[0].innerHTML = `<filter id="f4" x="-2px" y="-2px" width="500%" height="500%">
+  //   <feOffset id="f4bub" result="offOut" in="SourceGraphic" dx="${x}" dy="${y}"></feOffset>
+  //   <feColorMatrix result="original" id="svgcolormatrix" type="matrix" values="-1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 0 0 0 1 -0.04"></feColorMatrix>
+  //   <feGaussianBlur result="blurOut" in="matrixOut" stdDeviation="10"></feGaussianBlur>
+  //   <feBlend in="SourceGraphic" in2="blurOut" mode="normal"></feBlend>
+  // </filter>`;
     this.def2[0].innerHTML = `<filter
   id="innershadow"
   x0="-50%"
