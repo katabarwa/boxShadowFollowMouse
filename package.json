@@ -13,5 +13,8 @@
   "dependencies": {
     "express": "^4.16.4",
     "surge": "^0.21.3"
+  },
+  "devDependencies": {
+    "less": "^4.1.1"
   }
 }

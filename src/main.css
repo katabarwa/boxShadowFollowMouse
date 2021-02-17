@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css?family=Space+Mono:400,700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+}
+
+.bub {
+  width: 120px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin-right: 50px;
+  height: 120px;
+  background-color: white;
+  border-radius: 20px;
+  -webkit-box-shadow: rgba(79, 1, 119, 0.36) 1.2px 22px 30px 0px;
+          box-shadow: rgba(79, 1, 119, 0.36) 1.2px 22px 30px 0px;
+  position: relative;
+}
+
+.bub:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-size: 46px;
+  background-position: center;
+}
+
+.showcase {
+  max-width: 640px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border-radius: 20px;
+}
+
+.hljs {
+  font-family: "Space Mono", monospace;
+  font-size: 14px;
+  padding: 0 26px;
+  border-radius: 18px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  overflow: auto;
+  line-height: 1.6;
+}
+
+pre {
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.configure {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  overflow: hidden;
+}
+/*# sourceMappingURL=main.css.map */
