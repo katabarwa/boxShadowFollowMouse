@@ -43,7 +43,7 @@
           </filter>
         </defs> -->
         <!-- innershadow -->
-        <!-- <defs id="deftwo">
+        <defs id="deftwo">
           <filter
             id="innershadow"
             x0="-50%"
@@ -65,7 +65,7 @@
               result="shadowDiff"
             ></feComposite>
 
-            <feFlood flood-color="white" flood-opacity="1"></feFlood>
+            <feFlood flood-color="black" flood-opacity="0.1"></feFlood>
             <feComposite in2="shadowDiff" operator="in"></feComposite>
             <feComposite
               in2="SourceGraphic"
@@ -87,11 +87,11 @@
               result="shadowDiff"
             ></feComposite>
 
-            <feFlood flood-color="white" flood-opacity="1"></feFlood>
+            <feFlood flood-color="black" flood-opacity="0.1"></feFlood>
             <feComposite in2="shadowDiff" operator="in"></feComposite>
             <feComposite in2="firstfilter" operator="over"></feComposite>
           </filter>
-        </defs> -->
+        </defs>
         <!-- second innershadow -->
         <defs id="defthree">
           <filter
@@ -143,7 +143,7 @@
           </filter>
         </defs>
         <g>
-          <g>
+          <g filter="url(#innershadow)">
             <!-- <g filter="url(#innershadow)"> -->
             <path
               class="st0"
@@ -319,7 +319,7 @@
                     C78.74,25.75,78.79,25.75,78.81,25.62z"
             />
           </g>
-          <g>
+          <g filter="url(#innershadow)">
             <!-- <g filter="url(#innershadow)"> -->
             <path
               class="st0"
