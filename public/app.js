@@ -15,8 +15,8 @@ class DirectionAwareShadow {
     const { currentTarget, offsetX, offsetY } = e;
     const { offsetHeight, offsetWidth } = currentTarget;
 
-    const x = ((offsetWidth / 2 - offsetX) * 0.8) / 2 / 100;
-    const y = ((offsetHeight / 2 - offsetY) * 0.8) / 2 / 100;
+    const x = ((offsetWidth / 2 - offsetX) * 0.8) / 2 / 10;
+    const y = ((offsetHeight / 2 - offsetY) * 0.8) / 2 / 10;
 
     //   this.def[0].innerHTML = `<filter id="f4" x="-2px" y="-2px" width="500%" height="500%">
     //   <feOffset id="f4bub" result="offOut" in="SourceGraphic" dx="${x}" dy="${y}"></feOffset>
@@ -45,7 +45,7 @@ class DirectionAwareShadow {
     result="shadowDiff"
   ></feComposite>
 
-  <feFlood flood-color="#444444" flood-opacity="0.75"></feFlood>
+  <feFlood flood-color="white" flood-opacity="0.75"></feFlood>
   <feComposite in2="shadowDiff" operator="in"></feComposite>
   <feComposite
     in2="SourceGraphic"
@@ -67,7 +67,7 @@ class DirectionAwareShadow {
     result="shadowDiff"
   ></feComposite>
 
-  <feFlood flood-color="#444444" flood-opacity="0.75"></feFlood>
+  <feFlood flood-color="white" flood-opacity="0.75"></feFlood>
   <feComposite in2="shadowDiff" operator="in"></feComposite>
   <feComposite in2="firstfilter" operator="over"></feComposite>
 </filter>`;

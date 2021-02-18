@@ -19,7 +19,7 @@
       >
         <style type="text/css">
           .st0 {
-            fill: white;
+            fill: rgb(189, 189, 189);
           }
         </style>
         <!-- dropshadow -->
@@ -48,8 +48,8 @@
             id="innershadow"
             x0="-50%"
             y0="-50%"
-            width="500%"
-            height="500%"
+            width="200%"
+            height="200%"
           >
             <feGaussianBlur
               in="SourceAlpha"
@@ -65,7 +65,7 @@
               result="shadowDiff"
             ></feComposite>
 
-            <feFlood flood-color="#444444" flood-opacity="0.75"></feFlood>
+            <feFlood flood-color="white" flood-opacity="1"></feFlood>
             <feComposite in2="shadowDiff" operator="in"></feComposite>
             <feComposite
               in2="SourceGraphic"
@@ -87,7 +87,7 @@
               result="shadowDiff"
             ></feComposite>
 
-            <feFlood flood-color="#444444" flood-opacity="0.75"></feFlood>
+            <feFlood flood-color="white" flood-opacity="1"></feFlood>
             <feComposite in2="shadowDiff" operator="in"></feComposite>
             <feComposite in2="firstfilter" operator="over"></feComposite>
           </filter>
